@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "/lib/Api/Index.php",
+        "use": "@vercel/php"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/lib/Api/Index.php" }
+    ]
+  }
+  

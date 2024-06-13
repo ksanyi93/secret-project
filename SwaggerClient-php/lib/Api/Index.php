@@ -6,22 +6,22 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 switch($requestMethod) {
     case 'GET':
-        $response = [
+        $response = array(
             'status' => 'success',
             'data' => 'This is a GET request response'
-        ];
+        );
         break;
     case 'POST':
-        $response = [
+        $response = array(
             'status' => 'success',
             'data' => 'This is a POST request response'
-        ];
+        );
         break;
     default:
-        $response = [
+        $response = array(
             'status' => 'error',
             'data' => 'Invalid request method'
-        ];
+        );
         break;
 }
 
